@@ -1,0 +1,102 @@
+VOXLINGUA107
+
+STEP0:
+CREATE AN ENIRONMENT(IF NEEDED)
+
+STEP1:
+use anyone:
+pip install git+https://github.com/speechbrain/speechbrain.git@develop
+git clone https://github.com/speechbrain/speechbrain.git
+
+STEP2:
+pip install -r requirements.txt
+
+
+STEP3: 
+
+CODE WITHOUT CHUNK:
+ 
+import torchaudio
+from speechbrain.inference.classifiers import EncoderClassifier
+language_id = EncoderClassifier.from_hparams(source="speechbrain/lang-id-voxlingua107-ecapa", savedir="tmp")
+# Download Thai language sample from Omniglot and cvert to suitable form
+signal = language_id.load_audio("JwalaRathiUrdu.wav")
+prediction =  language_id.classify_batch(signal)
+# print("*****",prediction
+print(prediction[1].exp())
+#  tensor([0.9850])
+# The identified language ISO code is given in prediction[3]
+print(prediction[3])
+#  ['th: Thai']
+# Alternatively, use the utterance embedding extractor:
+emb =  language_id.encode_batch(signal)
+print(emb.shape)
+
+
+CODE WITH CHUNK:
+
+import torchaudio
+from speechbrain.inference.classifiers import EncoderClassifier
+
+def split_audio_in_memory(signal, sample_rate, chunk_duration):
+    """
+    Splits an audio signal into smaller chunks in memory.
+
+    Args:
+        signal (torch.Tensor): The audio signal tensor.
+        sample_rate (int): Sampling rate of the audio.
+        chunk_duration (float): Duration of each chunk in seconds.
+
+    Returns:
+        list: List of tensors, each representing a chunk of audio.
+    """
+    chunk_size = int(chunk_duration * sample_rate)  # Number of samples per chunk
+    num_chunks = signal.size(1) // chunk_size + (1 if signal.size(1) % chunk_size != 0 else 0)
+
+    chunks = [signal[:, i * chunk_size:(i + 1) * chunk_size] for i in range(num_chunks)]
+    return chunks
+
+# Load the pre-trained language identification model
+language_id = EncoderClassifier.from_hparams(
+    source="speechbrain/lang-id-voxlingua107-ecapa", savedir="tmp"
+)
+
+# Path to your large audio file
+audio_path = "AliMohmadKhanUrdu.wav"
+chunk_duration = 10  # Duration of each chunk in seconds
+sample_rate_target = 16000  # Target sampling rate for model compatibility
+
+# Load the audio file
+signal, sample_rate = torchaudio.load(audio_path)
+
+# Resample if necessary
+if sample_rate != sample_rate_target:
+    signal = torchaudio.transforms.Resample(orig_freq=sample_rate, new_freq=sample_rate_target)(signal)
+    sample_rate = sample_rate_target
+
+# Split the audio into chunks in memory
+chunks = split_audio_in_memory(signal, sample_rate, chunk_duration)
+
+# Process each chunk and collect predictions
+language_scores = []
+language_labels = []
+
+for i, chunk in enumerate(chunks):
+    try:
+        # Process each chunk through the model
+        prediction = language_id.classify_batch(chunk)
+        scores = prediction[1].exp().tolist()
+        labels = prediction[3]
+
+        # Store the results
+        language_scores.extend(scores)
+        language_labels.extend(labels)
+
+        print(f"Chunk {i+1}/{len(chunks)} processed successfully.")
+    except Exception as e:
+        print(f"Error processing chunk {i+1}: {e}")
+
+# Aggregate and print the results
+print("\nPredicted Languages (per chunk):", language_labels)
+print("Confidence Scores (per chunk):", language_scores)
+

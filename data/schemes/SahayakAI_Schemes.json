@@ -1,0 +1,137 @@
+[
+  {
+    "scheme_name":"Ayushman Bharat - PM Jan Arogya Yojana (PM-JAY)",
+    "level":"National",
+    "ministry":"National Health Authority, MoHFW",
+    "benefit":"Health insurance cover of \u20b95 lakh per family\/year for secondary and tertiary hospitalization.",
+    "eligibility":"Deprived rural families and identified occupational categories of urban workers as per SECC 2011.",
+    "apply_portal":"https:\/\/pmjay.gov.in\/",
+    "official_source":"https:\/\/pmjay.gov.in\/"
+  },
+  {
+    "scheme_name":"Pradhan Mantri Ujjwala Yojana (PMUY) 2.0",
+    "level":"National",
+    "ministry":"Ministry of Petroleum & Natural Gas",
+    "benefit":"Free LPG connections to women from BPL households.",
+    "eligibility":"Adult women belonging to poor households with valid ration card.",
+    "apply_portal":"https:\/\/www.pmuy.gov.in\/",
+    "official_source":"https:\/\/www.pmuy.gov.in\/"
+  },
+  {
+    "scheme_name":"Pradhan Mantri Awas Yojana - Urban (PMAY-U)",
+    "level":"National",
+    "ministry":"Ministry of Housing and Urban Affairs",
+    "benefit":"Subsidy on home loan interest for EWS, LIG, MIG categories.",
+    "eligibility":"Urban poor, EWS\/LIG\/MIG categories; family should not own a pucca house.",
+    "apply_portal":"https:\/\/pmaymis.gov.in\/",
+    "official_source":"https:\/\/pmaymis.gov.in\/"
+  },
+  {
+    "scheme_name":"PM-KISAN Samman Nidhi",
+    "level":"National",
+    "ministry":"Ministry of Agriculture & Farmers Welfare",
+    "benefit":"\u20b96000 per year in 3 equal installments to eligible farmers.",
+    "eligibility":"All small and marginal farmers (excluding higher income groups).",
+    "apply_portal":"https:\/\/pmkisan.gov.in\/",
+    "official_source":"https:\/\/pmkisan.gov.in\/"
+  },
+  {
+    "scheme_name":"Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+    "level":"National",
+    "ministry":"Ministry of Finance",
+    "benefit":"Financial inclusion with zero-balance bank account, RuPay card, overdraft facility.",
+    "eligibility":"Any Indian citizen without a bank account.",
+    "apply_portal":"https:\/\/pmjdy.gov.in\/",
+    "official_source":"https:\/\/pmjdy.gov.in\/"
+  },
+  {
+    "scheme_name":"PM Street Vendor's Atmanirbhar Nidhi (PM SVANidhi)",
+    "level":"National",
+    "ministry":"Ministry of Housing and Urban Affairs",
+    "benefit":"Collateral-free working capital loan of \u20b910,000, repayable in monthly installments.",
+    "eligibility":"Street vendors operating on or before March 24, 2020.",
+    "apply_portal":"https:\/\/pmsvanidhi.mohua.gov.in\/",
+    "official_source":"https:\/\/pmsvanidhi.mohua.gov.in\/"
+  },
+  {
+    "scheme_name":"Atal Pension Yojana (APY)",
+    "level":"National",
+    "ministry":"Ministry of Finance",
+    "benefit":"Guaranteed pension between \u20b91000 and \u20b95000 per month after 60 years.",
+    "eligibility":"All Indian citizens aged 18-40 years with bank account.",
+    "apply_portal":"https:\/\/npscra.nsdl.co.in\/nsdl-forms.php",
+    "official_source":"https:\/\/financialservices.gov.in\/atal-pension-yojana"
+  },
+  {
+    "scheme_name":"National Scholarship Portal (NSP)",
+    "level":"National",
+    "ministry":"Ministry of Education",
+    "benefit":"Centralized scholarships for students from various ministries\/departments.",
+    "eligibility":"Students from SC\/ST\/OBC\/Minority\/EWS backgrounds as per scheme-specific norms.",
+    "apply_portal":"https:\/\/scholarships.gov.in\/",
+    "official_source":"https:\/\/scholarships.gov.in\/"
+  },
+  {
+    "scheme_name":"PM POSHAN (Mid-Day Meal Scheme)",
+    "level":"National",
+    "ministry":"Ministry of Education",
+    "benefit":"Nutritious mid-day meals to school children.",
+    "eligibility":"All children in government and government-aided schools up to Class VIII.",
+    "apply_portal":"Through schools",
+    "official_source":"https:\/\/pmposhan.education.gov.in\/"
+  },
+  {
+    "scheme_name":"e-Shram Portal",
+    "level":"National",
+    "ministry":"Ministry of Labour and Employment",
+    "benefit":"National database of unorganized workers with accidental insurance coverage.",
+    "eligibility":"Unorganized workers aged 16-59 years.",
+    "apply_portal":"https:\/\/eshram.gov.in\/",
+    "official_source":"https:\/\/eshram.gov.in\/"
+  },
+  {
+    "scheme_name":"Mahatma Jyotiba Phule Jan Arogya Yojana (MJPJAY)",
+    "level":"Maharashtra",
+    "ministry":"Public Health Department, Maharashtra",
+    "benefit":"Cashless health insurance up to \u20b91.5 lakh per family per year.",
+    "eligibility":"Families with yellow\/antyodaya ration cards, farmers from 14 distressed districts.",
+    "apply_portal":"https:\/\/www.jeevandayee.gov.in\/",
+    "official_source":"https:\/\/www.jeevandayee.gov.in\/"
+  },
+  {
+    "scheme_name":"Sanjay Gandhi Niradhar Anudan Yojana",
+    "level":"Maharashtra",
+    "ministry":"Dept. of Social Justice, Maharashtra",
+    "benefit":"Monthly pension to destitute persons.",
+    "eligibility":"Destitute, orphaned, disabled, divorced women, etc.",
+    "apply_portal":"https:\/\/sjsa.maharashtra.gov.in\/",
+    "official_source":"https:\/\/sjsa.maharashtra.gov.in\/"
+  },
+  {
+    "scheme_name":"Shravanbal Seva Rajya Nivruttivetan Yojana",
+    "level":"Maharashtra",
+    "ministry":"Dept. of Social Justice, Maharashtra",
+    "benefit":"Monthly pension to destitute senior citizens above 65 years.",
+    "eligibility":"Senior citizens with annual income <\u20b921,000.",
+    "apply_portal":"https:\/\/sjsa.maharashtra.gov.in\/",
+    "official_source":"https:\/\/sjsa.maharashtra.gov.in\/"
+  },
+  {
+    "scheme_name":"Rajarshi Chhatrapati Shahu Maharaj Merit Scholarship",
+    "level":"Maharashtra",
+    "ministry":"Higher & Technical Education Dept., Maharashtra",
+    "benefit":"Scholarship for meritorious students belonging to SC category.",
+    "eligibility":"SC students studying in Class XI-XII with >75% in Class X.",
+    "apply_portal":"https:\/\/mahadbt.maharashtra.gov.in\/",
+    "official_source":"https:\/\/mahadbt.maharashtra.gov.in\/"
+  },
+  {
+    "scheme_name":"Post-Matric Scholarship to SC Students",
+    "level":"Maharashtra",
+    "ministry":"Dept. of Social Justice, Maharashtra",
+    "benefit":"Covers tuition\/exam fees for SC students in post-matric courses.",
+    "eligibility":"SC category students with family income below prescribed limit.",
+    "apply_portal":"https:\/\/mahadbt.maharashtra.gov.in\/",
+    "official_source":"https:\/\/mahadbt.maharashtra.gov.in\/"
+  }
+]
